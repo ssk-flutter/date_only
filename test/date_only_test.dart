@@ -11,4 +11,11 @@ void main() {
     expect(dateOnly.day, dateTime.day);
   });
 
+  test('now', () {
+    final dateOnly = DateOnly.now();
+    print('now is $dateOnly');
+  });
+
+
+
 }
