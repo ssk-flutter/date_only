@@ -1,7 +1,7 @@
 name: date_only
 description: class DateOnly
 version: 0.0.1
-homepage:
+homepage: https://github.com/deviankim/date_only
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
