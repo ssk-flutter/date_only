@@ -11,7 +11,18 @@ void main() {
     expect(dateOnly.day, dateTime.day);
   });
 
-  test('now', () {
+  test('toDateTime', () {
+    final dateOnly = DateOnly.today();
+    final dateTime = dateOnly.toDateTime();
+    expect(dateOnly.year, dateTime.year);
+    expect(dateOnly.month, dateTime.month);
+    expect(dateOnly.day, dateTime.day);
+    expect(dateTime.hour, 0);
+    expect(dateTime.minute, 0);
+    expect(dateTime.second, 0);
+  });
+
+  test('today', () {
     final dateOnly = DateOnly.today();
     print('today is $dateOnly');
   });
