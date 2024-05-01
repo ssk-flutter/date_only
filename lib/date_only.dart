@@ -21,7 +21,11 @@ class DateOnly {
       );
 
   /// factory now
-  factory DateOnly.now() => DateOnly.fromDateTime(DateTime.now());
+  @Deprecated('Use DateOnly.today() instead')
+  factory DateOnly.now() => DateOnly.today();
+
+  /// factory today
+  factory DateOnly.today() => DateOnly.fromDateTime(DateTime.now());
 
   @override
   String toString() {
