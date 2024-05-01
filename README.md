@@ -16,7 +16,7 @@ Present only date field (year, month, day)
 ## Features
 
 ```dart
-DateOnly dateOnly = DateOnly.now();
+DateOnly dateOnly = DateOnly.today();
 
 print('year: ${dateOnly.year}');
 print('month: ${dateOnly.month}');
@@ -33,7 +33,7 @@ dart pub add date_only
 ```dart
 import 'package:date_only/date_only.dart';
 
-final DateOnly dateOnlyForNow = DateOnly.now();
+final DateOnly dateOnlyForToday = DateOnly.today();
 final DateOnly dateOnlyFromDateTime = DateOnly.fromDateTime(DateTime(...));
 ```
 
