@@ -25,14 +25,14 @@ class DateOnly {
 
   @override
   String toString() {
-    String _addLeadingZeroIfNeeded(int value) {
+    String addLeadingZeroIfNeeded(int value) {
       if (value < 10) return '0$value';
       return value.toString();
     }
 
-    final String yearLabel = _addLeadingZeroIfNeeded(year);
-    final String monthLabel = _addLeadingZeroIfNeeded(month);
-    final String dayLabel = _addLeadingZeroIfNeeded(day);
+    final String yearLabel = addLeadingZeroIfNeeded(year);
+    final String monthLabel = addLeadingZeroIfNeeded(month);
+    final String dayLabel = addLeadingZeroIfNeeded(day);
 
     return '$DateOnly($yearLabel-$monthLabel-$dayLabel)';
   }
