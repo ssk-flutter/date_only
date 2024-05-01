@@ -12,8 +12,8 @@ void main() {
   });
 
   test('now', () {
-    final dateOnly = DateOnly.now();
-    print('now is $dateOnly');
+    final dateOnly = DateOnly.today();
+    print('today is $dateOnly');
   });
 
 
