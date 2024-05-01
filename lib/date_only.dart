@@ -20,6 +20,11 @@ class DateOnly {
         day: dateTime.day,
       );
 
+  /// toDateTime
+  /// Convert to DateTime
+  /// Warning: Time is set to 00:00:00
+  DateTime toDateTime() => DateTime(year, month, day);
+
   /// factory now
   @Deprecated('Use DateOnly.today() instead')
   factory DateOnly.now() => DateOnly.today();
