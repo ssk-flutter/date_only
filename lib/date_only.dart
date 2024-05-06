@@ -43,6 +43,6 @@ class DateOnly {
     final String monthLabel = addLeadingZeroIfNeeded(month);
     final String dayLabel = addLeadingZeroIfNeeded(day);
 
-    return '$DateOnly($yearLabel-$monthLabel-$dayLabel)';
+    return '$yearLabel-$monthLabel-$dayLabel';
   }
 }

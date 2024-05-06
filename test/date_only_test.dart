@@ -27,6 +27,9 @@ void main() {
     print('today is $dateOnly');
   });
 
-
-
+  test('toString', () {
+    final dateTime = DateTime(1980, 7, 26, 1, 1, 1, 1);
+    final dateOnly = DateOnly.fromDateTime(dateTime);
+    expect(dateOnly.toString(), '1980-07-26');
+  });
 }
