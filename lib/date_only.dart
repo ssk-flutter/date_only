@@ -32,6 +32,21 @@ class DateOnly {
   /// factory today
   factory DateOnly.today() => DateOnly.fromDateTime(DateTime.now());
 
+  /// equals
+  /// Compare two DateOnly objects
+  @override
+  bool operator ==(Object other) {
+    if (other is DateOnly) {
+      return year == other.year && month == other.month && day == other.day;
+    }
+    return false;
+  }
+
+  @override
+  int get hashCode {
+    return year.hashCode ^ month.hashCode ^ day.hashCode;
+  }
+
   @override
   String toString() {
     String addLeadingZeroIfNeeded(int value) {

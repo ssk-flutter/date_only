@@ -1,3 +1,7 @@
+## 0.0.7
+
+* `DateOnly` class now implements `Comparable` interface.
+
 ## 0.0.6
 
 * toString Method Modified: Now returns the date in the format `yyyy-MM-dd`.

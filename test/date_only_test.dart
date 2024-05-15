@@ -32,4 +32,10 @@ void main() {
     final dateOnly = DateOnly.fromDateTime(dateTime);
     expect(dateOnly.toString(), '1980-07-26');
   });
+
+  test('compare', () {
+    final dateOnly1 = DateOnly.fromDateTime(DateTime(1980, 7, 26));
+    final dateOnly2 = DateOnly.fromDateTime(DateTime(1980, 7, 26));
+    expect(dateOnly1 == dateOnly2, true);
+  });
 }
