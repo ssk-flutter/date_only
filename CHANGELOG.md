@@ -1,3 +1,7 @@
+## 0.0.8
+
+* parse method added: Parses a string to a `DateOnly` object.
+
 ## 0.0.7
 
 * `DateOnly` class now implements `Comparable` interface.

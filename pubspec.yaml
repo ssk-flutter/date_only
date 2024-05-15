@@ -1,6 +1,6 @@
 name: date_only
 description: class DateOnly
-version: 0.0.7
+version: 0.0.8
 homepage: https://github.com/deviankim/date_only
 
 environment:

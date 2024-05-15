@@ -49,15 +49,15 @@ class DateOnly {
 
   @override
   String toString() {
-    String addLeadingZeroIfNeeded(int value) {
-      if (value < 10) return '0$value';
-      return value.toString();
-    }
+    return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
+  }
 
-    final String yearLabel = addLeadingZeroIfNeeded(year);
-    final String monthLabel = addLeadingZeroIfNeeded(month);
-    final String dayLabel = addLeadingZeroIfNeeded(day);
-
-    return '$yearLabel-$monthLabel-$dayLabel';
+  factory DateOnly.parse(String s) {
+    final parts = s.split('-');
+    return DateOnly(
+      year: int.parse(parts[0]),
+      month: int.parse(parts[1]),
+      day: int.parse(parts[2]),
+    );
   }
 }
