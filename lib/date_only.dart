@@ -61,3 +61,8 @@ class DateOnly {
     );
   }
 }
+
+
+extension DateTimeToDateOnly on DateTime {
+  DateOnly toDateOnly() => DateOnly.fromDateTime(this);
+}

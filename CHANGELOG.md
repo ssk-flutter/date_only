@@ -1,3 +1,7 @@
+## 0.0.9
+
+* extension DateTime.toDateOnly added: Converts DateTime to DateOnly.
+
 ## 0.0.8
 
 * parse method added: Parses a string to a `DateOnly` object.

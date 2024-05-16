@@ -51,4 +51,12 @@ void main() {
     expect(dateOnly.month, 7);
     expect(dateOnly.day, 26);
   });
+
+  test('extension DateTime.toDateOnly', () {
+    final dateTime = DateTime(1980, 7, 26, 1, 1, 1, 1);
+    final dateOnly = dateTime.toDateOnly();
+    expect(dateOnly.year, dateTime.year);
+    expect(dateOnly.month, dateTime.month);
+    expect(dateOnly.day, dateTime.day);
+  });
 }
