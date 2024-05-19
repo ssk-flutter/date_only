@@ -59,4 +59,12 @@ void main() {
     expect(dateOnly.month, dateTime.month);
     expect(dateOnly.day, dateTime.day);
   });
+
+  test('copyWith', () {
+    final dateOnly = DateOnly.fromDateTime(DateTime(1980, 7, 26));
+    final newDateOnly = dateOnly.copyWith(year: 1981, month: 8, day: 27);
+    expect(newDateOnly.year, 1981);
+    expect(newDateOnly.month, 8);
+    expect(newDateOnly.day, 27);
+  });
 }

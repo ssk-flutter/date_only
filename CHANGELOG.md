@@ -1,3 +1,7 @@
+## 0.1.10
+
+* copyWith method added: Creates a new DateOnly instance with the same date as the original.
+
 ## 0.0.9
 
 * extension DateTime.toDateOnly added: Converts DateTime to DateOnly.

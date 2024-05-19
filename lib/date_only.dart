@@ -52,6 +52,18 @@ class DateOnly {
     return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
   }
 
+  /// copyWith
+  DateOnly copyWith({
+    int? year,
+    int? month,
+    int? day,
+  }) =>
+      DateOnly(
+        year: year ?? this.year,
+        month: month ?? this.month,
+        day: day ?? this.day,
+      );
+
   factory DateOnly.parse(String s) {
     final parts = s.split('-');
     return DateOnly(
@@ -61,7 +73,6 @@ class DateOnly {
     );
   }
 }
-
 
 extension DateTimeToDateOnly on DateTime {
   DateOnly toDateOnly() => DateOnly.fromDateTime(this);
